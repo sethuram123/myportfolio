@@ -1,0 +1,116 @@
+/*--general--*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: aqua;
+}
+ 
+/*--desktopnav-links--*/
+#desktopnav-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+    height: 20vh;
+}
+.logo{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    margin-bottom: 30px;
+
+}
+li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    text-decoration: underline rgb(255, 70, 70);
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:80px;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+h2{
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+h3{
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+/*--social icons--*/
+
+ 
+ul{
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center ;
+}
+ .a{
+    font-size: 50px;
+    color: black;
+}
+
+
+@media screen and (max-width:820px){
+    #desktopnav-links{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: 20vh;
+    }
+    li a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        position: relative;
+        top: 30px;
+    }
+}
+
+
+   
